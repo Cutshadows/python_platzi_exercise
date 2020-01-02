@@ -1,0 +1,30 @@
+'''
+
+                            Online Python Interpreter.
+                Code, Compile, Run and Debug python program online.
+Write your code in this editor and press "Run" button to execute it.
+
+'''
+def palindrome(word):
+    reversed_letters=[]
+    for letter in word:
+        reversed_letters.inser(0, letter)
+        
+    reversed_word=''.join(reversed_letters)
+    
+    if reversed_word == word:
+        return True
+    return False
+
+
+
+if __name__=='__main__':
+    word=str(input("Escribe la palabra: "))
+    
+    
+    result=palindrome(word)
+    
+    if result is True:
+        print('{} si es palindrome'.format(word))
+    else:
+        print('{} no es palindrome.'.format(word))
